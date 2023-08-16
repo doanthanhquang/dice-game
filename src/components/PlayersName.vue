@@ -19,7 +19,7 @@
           type="text"
         />
       </div>
-      <button @click="complete" class="complete">Xong</button>
+      <button @click="complete" class="complete">Bắt đầu</button>
     </div>
   </div>
 </template>
