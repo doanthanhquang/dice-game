@@ -83,7 +83,7 @@ export default {
     },
     handleComplete() {
       this.isComplete = false;
-      this.activePlayer = 0;
+      this.activePlayer = Math.floor(Math.random() * 2);
       this.isPlaying = true;
       this.scorePlayer = [0, 0];
       this.dices = [1, 1];
@@ -131,6 +131,8 @@ export default {
       var number = parseInt(e.target.value);
       if (isNaN(number)) {
         this.finalScore = "";
+      } else if (number < 0) {
+        alert("Vui lòng nhập lại điểm");
       } else {
         this.finalScore = number;
       }
