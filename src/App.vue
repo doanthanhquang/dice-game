@@ -132,7 +132,8 @@ export default {
       if (isNaN(number)) {
         this.finalScore = "";
       } else if (number < 0) {
-        alert("Vui lòng nhập lại điểm");
+        alert("Vui lòng nhập lại điểm (nên trên 10đ)");
+        this.finalScore = 10
       } else {
         this.finalScore = number;
       }
